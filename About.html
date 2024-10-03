@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BlackHat About Us</title>
+    <style>
+        .know {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+
+        }
+
+        header {
+            width: 100%;
+            display: block;
+
+        }
+
+        .video-bg video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+
+        }
+
+        .pare1 {
+            font-size: 30px;
+            font-family: cursive;
+            padding: 60px;
+            font-weight: bold;
+
+        }
+
+        .cont-box {
+            margin: auto;
+            height: 80vh;
+            width: 90%;
+            opacity: 0.7;
+
+        }
+
+        form {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input {
+            width: auto;
+            height: 30px;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid pink;
+
+        }
+
+        .contact {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        textarea {
+            border-radius: 10px;
+            border: 1px solid pink;
+            width: auto;
+            margin: 7px;
+        }
+
+        .btnn {
+            height: 35px;
+            width: 100px;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            
+
+        }
+
+        .self {
+            font-size: 45px;
+            font-weight: bolder;
+            color: black;
+
+        }
+
+        @media only screen and (max-width: 705px) {
+
+            .pare1 {
+                font-size: 22px;
+                font-family: cursive;
+                /* padding: 60px; */
+                font-weight: bold;
+                padding: 15px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-bg">
+        <video autoplay loop muted>
+            <source src="mountain.mp4">
+        </video>
+    </div>
+    <header>
+
+        <h1 class="know">Want To Know About Us ?? </h1>
+    </header>
+    <p class="pare1">Hello Guys My Name Is Nishant And Currently I Am Studying Ethical Hacking , Penetetation Testing
+        And Now Days I am Learning Programing languages like Rust , C++ , Python , Kotlin and many more and I am Going
+        to make a Team Of Hackers Which Can Make Open Source Softwares and Hacking Tools To enchance The Security of
+        Systems </p>
+
+    <div class="cont-box">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h3 class="self">Tell Something About YourSelf !! </h3>
+            <div class="contact">
+                <input type="hidden" name="access_key" value="adda7b4b-bb89-4691-91e7-03c5b33898d0">
+                <input type="text" class="forms" placeholder="Enter Your Name " name="name" required>
+                <input type="email" class="forms" placeholder="Enter Your Email" name="email" required>
+                <textarea name="message" class="forms" id="Message" cols="30" rows="10"
+                    placeholder="Tell Something About Yourself !!" required></textarea>
+            </div>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <input type="submit" class="forms btnn">
+
+        </form>
+    </div>
+
+</body>
+
+</html>

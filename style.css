@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.video-bg video {
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+
+}
+
+.boxx{
+    padding-top: 500px;
+    width: 100%;
+    margin:auto;
+    height: 100vh;
+}
+
+nav{
+
+    position: fixed;
+    width: 100%;
+}
+
+.list {
+    height: 80px;
+    background-color: rgb(127 193 255 / 56%);
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+}
+
+.list ul {
+    display: flex;
+    padding: 29px;
+    list-style: none;
+    /* position: fixed; */
+    z-index: 2;
+
+
+
+}
+
+.list ul li {
+    float: left;
+}
+
+.list ul li a {
+    padding: 50px;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    justify-content: center;
+    padding-top: 210px;
+}
+
+.cont-1 {
+    font-size: 55px;
+    font-family: cursive;
+}
+
+.cont-2 {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.github,
+.github a {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    width: 220px;
+    text-decoration: none;
+    font-size: 25px;
+    border: 1px solid white;
+    font-weight: bolder;
+}
+
+.sec-1 {
+    padding-top: 345px;
+}
+
+
+
+
+.hamburger {
+    position: fixed;
+    color: white;
+    padding-top: 30px;
+    position: absolute;
+    left: 90%;
+    display: none;
+    z-index: 1;
+
+}
+
+.line {
+    margin: 3px;
+    background-color: white;
+    color: white;
+    height: 5px;
+    width: 47px;
+}
+
+
+
+
+
+
+@media only screen and (max-width : 738px) {
+
+    /* .box {
+        display: none;
+    } */
+    .content {
+        padding-top: 211px;
+    }
+
+
+
+    .list {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+
+    .list ul {
+        margin-top: 50px;
+        /* margin: auto; */
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .list ul li {
+        padding: 35px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list ul li a {
+        font-size: 25px;
+        font-family: cursive;
+    }
+
+    .hamburger {
+        display: block;
+        right: 15%;
+        left: 81%;
+        position: fixed;
+    }
+
+    .no-list {
+        height: 80px;
+
+
+    }
+
+    .no-link {
+
+        visibility: hidden;
+
+    }
+
+
+
+    .cont-1 {
+        font-size: 40px;
+    }
+
+    
+    .no-git{
+        display: none;
+    }
+}
