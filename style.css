@@ -79,8 +79,6 @@ nav{
     font-size: 55px;
     font-family: "Cedarville Cursive", cursive;
     font-weight: 400;
-    font-style: normal;
-    font-family: cursive;
 }
 
 .cont-2 {
@@ -202,6 +200,9 @@ nav{
     .cont-1 {
         font-size: 51px;
         font-weight: bold;
+        font-family: "Cedarville Cursive", cursive;
+    }
+
     }
 
     
